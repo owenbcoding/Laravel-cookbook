@@ -13,17 +13,19 @@
         <script>
             const ctx = document.getElementById('myChart');
 
+            const lables = ['Jan', 'Feb', 'Mar', 'Apr', 'May', ' Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+            
             new Chart(ctx, {
                 type: 'bar',
                 data: {
-                    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                    labels: lables,
                     datasets: [{
-                        label: '# of Votes',
+                        label: 'Last Year Orders',
                         backgroundColor: 'lightgray',
                         data: [12, 19, 3, 5, 2, 3],
                         borderWidth: 1
                     }, {
-                        label: '# of Votes',
+                        label: 'This year Orders',
                         backgroundColor: 'lightgray',
                         data: [12, 19, 3, 5, 2, 3],
                         borderWidth: 1
