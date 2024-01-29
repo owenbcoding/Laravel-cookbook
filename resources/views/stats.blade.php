@@ -3,14 +3,7 @@
 @section('content')
     <div class="grid grid-cols-4 gap-10 mt-6">
         <div class="bg-white shadow-md rounded-lg px-4 py-6">
-            <div class="flex justify-between item-center">
-                <h4 class="text-gray-500 font-medium">users</h4>
-                <select name="selectedDays" id="selectedDays" class="border bg-gray-100">
-                    <option value="30">30 days</option>
-                    <option value="30">60 days</option>
-                    <option value="30">90 days</option>
-                </select>
-            </div>
+            <livewire:stats.users-count />
             <div class="text-3xl font-bold mt-4">{{ $usersCount }}</div>
         </div>
         <div class="bg-white shadow-md rounded-lg px-4 py-6">
