@@ -4,7 +4,6 @@
     <div class="grid grid-cols-4 gap-10 mt-6">
         <div class="bg-white shadow-md rounded-lg px-4 py-6">
             <livewire:stats.users-count />
-            <div class="text-3xl font-bold mt-4">{{ $usersCount }}</div>
         </div>
         <div class="bg-white shadow-md rounded-lg px-4 py-6">
             <h4 class="text-gray-500 font-medium">Orders</h4>
