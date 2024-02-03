@@ -10,13 +10,15 @@ class UsersCount extends Component
     public $selectedDays;
     public $usersCount;
 
-    public function mount() {
-       
+    public function mount()
+    {
+        $this->selectedDays = 30;
         $this->updateStat();
     }
 
-    public function updateStat() {
-        $this->usersCount = User::where('created_at', '>', now()->subDays($this->selectedDays))->count();
+    public function updateStat()
+    {
+        $this->usersCount = User::where('created_at', '>=', now()->subDays($this->selectedDays))->count();
     }
 
     public function render()
