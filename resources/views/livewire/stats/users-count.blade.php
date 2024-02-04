@@ -7,6 +7,6 @@
             <option value="30">90 days</option>
         </select>
     </div>
-    <div class="text3xl font-bold mt-4">{{$usersCount}}</div>
+    <div class="text3xl font-bold mt-4">{{ $usersCount }}</div>
 
 
